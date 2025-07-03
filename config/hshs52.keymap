@@ -34,8 +34,8 @@
 
             bindings = <
 &kp TAB     &kp Q  &kp W  &kp F  &kp P     &kp G                                                                  &kp J      &kp L  &kp U      &kp Y     &kp SEMI  &kp DELETE
-&kp ESCAPE  &kp A  &kp R  &kp S  &kp T     &kp D                                                                  &kp M      &kp N  &kp E      &kp I     &kp O     &kp APOSTROPHE
-&kp LCTRL   &kp Z  &kp X  &kp C  &kp V     &kp B            &none                                &none            &kp K      &kp H  &kp COMMA  &kp DOT   &kp UP    &none
+&kp ESCAPE  &kp A  &kp R  &kp S  &kp T     &kp D                                                                  &kp H      &kp N  &kp E      &kp I     &kp O     &kp APOSTROPHE
+&kp LCTRL   &kp Z  &kp X  &kp C  &kp V     &kp B            &none                                &none            &kp K      &kp M  &kp COMMA  &kp DOT   &kp UP    &none
 &kp GRAVE   &kp E  &none         &kp LGUI  &lt 1 BACKSPACE  &sk LSHIFT  &kp LEFT_ALT  &kp ENTER  &kp RIGHT_SHIFT  &kp SPACE  &none             &kp LEFT  &kp DOWN  &kp RIGHT
             >;
 
