@@ -38,11 +38,24 @@
             bindings = <
 &kp TAB     &kp Q  &kp W      &kp F  &kp P     &kp G                                                                  &kp J      &kp L  &kp U      &kp Y     &kp SEMI  &kp DELETE
 &kp ESCAPE  &kp A  &kp R      &kp S  &kp T     &kp D                                                                  &kp H      &kp N  &kp E      &kp I     &kp O     &kp APOSTROPHE
-&kp LCTRL   &kp Z  &kp X      &kp C  &kp V     &kp B            &tog 2                               &none            &kp K      &kp M  &kp COMMA  &kp DOT   &kp UP    &none
-&kp GRAVE   &kp E  &kp SPACE         &kp LGUI  &lt 1 BACKSPACE  &sk LSHIFT  &kp LEFT_ALT  &kp ENTER  &kp RIGHT_SHIFT  &kp SPACE  &none             &kp LEFT  &kp DOWN  &kp RIGHT
+&kp LCTRL   &kp Z  &kp X      &kp C  &kp V     &kp B            &tog 1                               &none            &kp K      &kp M  &kp COMMA  &kp DOT   &kp UP    &none
+&kp GRAVE   &kp E  &kp SPACE         &kp LGUI  &lt 2 BACKSPACE  &kp LSHIFT  &kp LEFT_ALT  &kp ENTER  &kp RIGHT_SHIFT  &kp SPACE  &none             &kp LEFT  &kp DOWN  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+
+        swap_hands {
+            bindings = <
+&trans  &trans  &kp Y   &kp U   &kp L   &kp J                                   &kp G   &kp P   &kp F  &kp W   &kp Q   &trans
+&trans  &kp O   &kp I   &kp E   &kp N   &kp H                                   &kp D   &kp T   &kp S  &kp R   &kp A   &trans
+&trans  &trans  &trans  &trans  &kp M   &kp K   &trans                  &trans  &kp B   &kp V   &kp C  &kp X   &kp Z   &trans
+&trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         symbol_layer {
@@ -52,19 +65,6 @@
 &trans  &kp EXCLAMATION  &kp N1     &kp N2  &kp N3  &kp RIGHT_PARENTHESIS  &bootloader                  &trans  &kp UNDERSCORE    &kp EQUAL          &kp PLUS        &kp HASH       &kp AT_SIGN       &kp END
 &trans  &kp LEFT         &kp RIGHT          &trans  &trans                 &trans       &trans  &trans  &trans  &trans            &trans                             &bt BT_PRV     &bt BT_CLR        &bt BT_NXT
             >;
-        };
-
-        swap_hands {
-            bindings = <
-&kp TAB     &kp Q  &kp Y      &kp U  &kp L     &kp J                                                                  &kp G      &kp P  &kp F  &kp W     &kp Q     &kp DELETE
-&kp ESCAPE  &kp O  &kp I      &kp E  &kp N     &kp H                                                                  &kp D      &kp T  &kp S  &kp R     &kp A     &kp APOSTROPHE
-&kp LCTRL   &kp Z  &kp X      &kp C  &kp M     &kp K            &trans                               &trans           &kp B      &kp V  &kp C  &kp X     &kp Z     &none
-&kp GRAVE   &kp E  &kp SPACE         &kp LGUI  &lt 1 BACKSPACE  &sk LSHIFT  &kp LEFT_ALT  &kp ENTER  &kp RIGHT_SHIFT  &kp SPACE  &none         &kp LEFT  &kp DOWN  &kp RIGHT
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
