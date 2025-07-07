@@ -69,10 +69,10 @@
 
         symbol_layer {
             bindings = <
-&trans  &kp HOME         &kp N7     &kp N8  &kp N9  &kp QUESTION                                                &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UP          &kp LESS_THAN  &kp GREATER_THAN  &kp CAPSLOCK
-&trans  &kp N0           &kp N4     &kp N5  &kp N6  &kp LEFT_PARENTHESIS                                        &kp MINUS         &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT      &kp SLASH         &kp BACKSLASH
-&trans  &kp EXCLAMATION  &kp N1     &kp N2  &kp N3  &kp RIGHT_PARENTHESIS  &bootloader                  &trans  &kp UNDERSCORE    &kp EQUAL          &kp PLUS        &kp HASH       &kp AT_SIGN       &kp END
-&trans  &kp LEFT         &kp RIGHT          &trans  &trans                 &trans       &trans  &trans  &trans  &trans            &trans                             &kp PAGE_UP    &trans            &kp PAGE_DOWN
+&trans  &kp HOME         &kp N7     &kp N8  &kp N9  &kp QUESTION                                                &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UP          &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp CAPSLOCK
+&trans  &kp N0           &kp N4     &kp N5  &kp N6  &kp LEFT_PARENTHESIS                                        &kp MINUS         &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT       &kp SLASH        &kp BACKSLASH
+&trans  &kp EXCLAMATION  &kp N1     &kp N2  &kp N3  &kp RIGHT_PARENTHESIS  &bootloader                  &trans  &kp UNDERSCORE    &kp EQUAL          &kp PLUS        &kp HASH        &kp AT_SIGN      &kp END
+&trans  &kp LEFT         &kp RIGHT          &trans  &trans                 &trans       &trans  &trans  &trans  &trans            &trans                             &kp PAGE_UP     &trans           &kp PAGE_DOWN
             >;
         };
 
