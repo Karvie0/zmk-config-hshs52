@@ -1,10 +1,10 @@
 file_format: "1"
-id: hshs52
-name: HSHS52
+id: hshs46
+name: HSHS46
 type: shield
 requires: [pro_micro]
 features:
   - keys
 siblings:
-  - hshs52_left
-  - hshs52_right
+  - hshs46_left
+  - hshs46_right
