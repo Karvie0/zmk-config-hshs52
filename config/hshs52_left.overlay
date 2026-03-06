@@ -1,7 +1,0 @@
-&nice_view_adapter {
-  status = "okay";
-};
-
-&chosen {
-  zephyr_display = &nice_view_adapter;
-};
