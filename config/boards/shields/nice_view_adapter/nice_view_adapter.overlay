@@ -1,0 +1,44 @@
+&spi1 {
+    status = "okay";
+    cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;   /* Chip Select for display */
+    sck-pin = <15>;                            /* SPI Clock */
+    mosi-pin = <16>;                           /* SPI MOSI */
+    miso-pin = <17>;                           /* SPI MISO, if used */
+};
+
+&gpio0 {
+    /* Data/Command pin for display */
+    nice_view_dc: dc {
+        gpios = <&gpio0 21 GPIO_ACTIVE_HIGH>;
+        label = "DISPLAY_DC";
+    };
+
+    /* Reset pin for display */
+    nice_view_reset: reset {
+        gpios = <&gpio0 22 GPIO_ACTIVE_LOW>;
+        label = "DISPLAY_RESET";
+    };
+
+    /* Optional Backlight control */
+    nice_view_bl: bl {
+        gpios = <&gpio0 23 GPIO_ACTIVE_HIGH>;
+        label = "DISPLAY_BL";
+    };
+};
+
+/ {
+    chosen {
+        zmk,display = &nice_view;
+    };
+
+    nice_view: nice_view {
+        compatible = "zmk,sh1107";           /* or ssd1306 if your display is different */
+        label = "NICE_VIEW";
+        height = <64>;
+        width = <128>;
+        reset-gpios = <&nice_view_reset 0>;
+        dc-gpios = <&nice_view_dc 0>;
+        bl-gpios = <&nice_view_bl 0>;
+        spi-bus = <&spi1>;
+    };
+};
