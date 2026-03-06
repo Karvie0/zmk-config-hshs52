@@ -1,0 +1,5 @@
+{
+  "board": "nice_nano",
+  "shields": ["hshs52_left", "hshs52_right", "nice_view"],
+  "keymap": "hshs52"
+}

@@ -8,3 +8,8 @@ features:
 siblings:
   - hshs52_left
   - hshs52_right
+overlays:
+  - hshs52_left.overlay
+  - hshs52_right.overlay
+kconfig: Kconfig.shield
+defconfig: Kconfig.defconfig
