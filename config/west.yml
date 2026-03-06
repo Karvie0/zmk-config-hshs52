@@ -1,6 +1,6 @@
 manifest:
   version: 0.7
-  remotes
+  remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
   projects:
